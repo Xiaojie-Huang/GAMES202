@@ -1,0 +1,4 @@
+model view projection矩阵推导
+NDC空间坐标归一化
+SM方式存在自遮挡锯齿，通过bias可解决，bias实现后会出现Peter-Panning阴影悬浮现象，符合课程内容
+
