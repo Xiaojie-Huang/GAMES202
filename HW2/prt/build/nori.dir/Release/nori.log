@@ -1,0 +1,39 @@
+﻿  prt.cpp
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(45,17): warning C4189: “index”: 局部变量已初始化但不引用
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(63,26): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(71,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(72,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(75,30): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(76,30): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(223,27): warning C4018: “<”: 有符号/无符号不匹配
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(229,59): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(229,52): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(229,45): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(254,70): warning C4244: “=”: 从“_Ty”转换到“float”，可能丢失数据
+          with
+          [
+              _Ty=double
+          ]
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(263,27): warning C4018: “<”: 有符号/无符号不匹配
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(293,110): warning C4244: “参数”: 从“float”转换到“Eigen::EigenBase<Derived>::Index”，可能丢失数据
+          with
+          [
+              Derived=Eigen::Matrix<float,-1,-1,0,-1,-1>
+          ]
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(294,110): warning C4244: “参数”: 从“float”转换到“Eigen::EigenBase<Derived>::Index”，可能丢失数据
+          with
+          [
+              Derived=Eigen::Matrix<float,-1,-1,0,-1,-1>
+          ]
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(295,110): warning C4244: “参数”: 从“float”转换到“Eigen::EigenBase<Derived>::Index”，可能丢失数据
+          with
+          [
+              Derived=Eigen::Matrix<float,-1,-1,0,-1,-1>
+          ]
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(109,29): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(212): message : 查看对正在编译的函数 模板 实例化“std::vector<Eigen::Array3f,std::allocator<Eigen::Array3f>> nori::ProjEnv::PrecomputeCubemapSH<2>(const std::vector<std::unique_ptr<float [],std::default_delete<float []>>,std::allocator<std::unique_ptr<float [],std::default_delete<float []>>>> &,const int &,const int &,const int &)”的引用
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(110,29): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(138,42): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(138,40): warning C4244: “参数”: 从“int”转换到“const float”，可能丢失数据
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp(120,15): warning C4189: “sumWeight”: 局部变量已初始化但不引用
+  nori.vcxproj -> D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\Release\nori.exe

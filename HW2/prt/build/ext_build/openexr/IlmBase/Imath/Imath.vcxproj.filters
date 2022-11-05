@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath\ImathBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath\ImathRandom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath\ImathColorAlgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath\ImathShear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath\ImathFun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath\ImathVec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath\ImathMatrixAlgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{777CE49F-F092-3CAA-A55D-DF7C4ABB2675}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

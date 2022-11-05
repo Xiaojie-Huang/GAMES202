@@ -1,0 +1,38 @@
+^D:\FILERECV\LEARNING\GITHUB\GAMES\GAMES202\HW2\PRT\BUILD\CMAKEFILES\5E06F900CE59E5FAEC173F25D00E8A0A\ELUT.H.RULE
+setlocal
+cd D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\Half
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\Half\Release\eLut.exe > D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/IlmBase/Half/eLut.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\FILERECV\LEARNING\GITHUB\GAMES\GAMES202\HW2\PRT\BUILD\CMAKEFILES\5E06F900CE59E5FAEC173F25D00E8A0A\TOFLOAT.H.RULE
+setlocal
+cd D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\Half
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\Half\Release\toFloat.exe > D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/IlmBase/Half/toFloat.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\FILERECV\LEARNING\GITHUB\GAMES\GAMES202\HW2\PRT\EXT\OPENEXR\ILMBASE\HALF\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt -BD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build --check-stamp-file D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/IlmBase/Half/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

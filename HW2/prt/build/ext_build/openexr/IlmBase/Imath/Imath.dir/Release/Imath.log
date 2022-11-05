@@ -1,0 +1,9 @@
+﻿  Building Custom Rule D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Imath/CMakeLists.txt
+  ImathBox.cpp
+  ImathRandom.cpp
+  ImathColorAlgo.cpp
+  ImathShear.cpp
+  ImathFun.cpp
+  ImathVec.cpp
+  ImathMatrixAlgo.cpp
+  Imath.vcxproj -> D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\Imath\Release\Imath.lib

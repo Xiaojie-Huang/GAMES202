@@ -1,0 +1,10 @@
+^D:\FILERECV\LEARNING\GITHUB\GAMES\GAMES202\HW2\PRT\EXT\ZLIB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt -BD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build --check-stamp-file D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/zlib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

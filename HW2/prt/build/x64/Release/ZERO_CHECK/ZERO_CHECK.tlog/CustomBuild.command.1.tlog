@@ -1,0 +1,10 @@
+^D:\FILERECV\LEARNING\GITHUB\GAMES\GAMES202\HW2\PRT\BUILD\CMAKEFILES\B5A91BE095CA98F0FA9C1E885A6ED655\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt -BD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/nori.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

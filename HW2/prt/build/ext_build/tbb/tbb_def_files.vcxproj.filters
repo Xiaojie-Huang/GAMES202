@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\src\tbb\win64-tbb-export.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\src\tbbmalloc\win64-tbbmalloc-export.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\aa938b17285124e6843683461eb9f4cc\tbb_def_files.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\tbb\CMakeFiles\tbb_def_files" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F5BFCBA1-210C-3A6B-BE87-82CFF561395D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{777CE49F-F092-3CAA-A55D-DF7C4ABB2675}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

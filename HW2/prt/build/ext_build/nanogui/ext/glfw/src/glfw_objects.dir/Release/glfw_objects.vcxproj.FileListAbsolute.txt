@@ -1,0 +1,1 @@
+D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\nanogui\ext\glfw\src\glfw_objects.dir\Release\glfw_objects.lib

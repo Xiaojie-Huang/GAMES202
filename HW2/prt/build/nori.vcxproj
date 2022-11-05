@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A1B6EFA3-1F2F-3767-A6E7-50503A57DDAC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>nori</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nori.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nori.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nori.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nori.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nori</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/eigen" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Imath" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Iex" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Half" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/OpenEXR/IlmImf" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/OpenEXR/config" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/IlmBase/config" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/tbb/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/pcg32" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/pugixml/src" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/hypothesis" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/glfw/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/glew/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/nanovg/src" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/filesystem" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/nanovg/example" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/spherical-harmonics" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\Debug\tbb_static.lib;ext_build\Debug\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\Debug\IlmImf.lib;ext_build\nanogui\Debug\nanogui.lib;ext_build\zlib\Debug\zlibstatic.lib;ext_build\openexr\IlmBase\Half\Debug\Half.lib;ext_build\openexr\IlmBase\Imath\Debug\Imath.lib;ext_build\openexr\IlmBase\IlmThread\Debug\IlmThread.lib;ext_build\openexr\IlmBase\Iex\Debug\Iex.lib;ext_build\openexr\zlib\Debug\zlib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/Debug/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/Debug/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/eigen" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Imath" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Iex" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Half" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/OpenEXR/IlmImf" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/OpenEXR/config" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/IlmBase/config" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/tbb/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/pcg32" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/pugixml/src" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/hypothesis" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/glfw/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/glew/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/nanovg/src" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/filesystem" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/nanovg/example" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/spherical-harmonics" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\Release\tbb_static.lib;ext_build\Release\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\Release\IlmImf.lib;ext_build\nanogui\Release\nanogui.lib;ext_build\zlib\Release\zlibstatic.lib;ext_build\openexr\IlmBase\Half\Release\Half.lib;ext_build\openexr\IlmBase\Imath\Release\Imath.lib;ext_build\openexr\IlmBase\IlmThread\Release\IlmThread.lib;ext_build\openexr\IlmBase\Iex\Release\Iex.lib;ext_build\openexr\zlib\Release\zlib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/Release/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/Release/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/eigen" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Imath" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Iex" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Half" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/OpenEXR/IlmImf" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/OpenEXR/config" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/IlmBase/config" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/tbb/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/pcg32" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/pugixml/src" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/hypothesis" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/glfw/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/glew/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/nanovg/src" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/filesystem" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/nanovg/example" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/spherical-harmonics" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\MinSizeRel\tbb_static.lib;ext_build\MinSizeRel\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\MinSizeRel\IlmImf.lib;ext_build\nanogui\MinSizeRel\nanogui.lib;ext_build\zlib\MinSizeRel\zlibstatic.lib;ext_build\openexr\IlmBase\Half\MinSizeRel\Half.lib;ext_build\openexr\IlmBase\Imath\MinSizeRel\Imath.lib;ext_build\openexr\IlmBase\IlmThread\MinSizeRel\IlmThread.lib;ext_build\openexr\IlmBase\Iex\MinSizeRel\Iex.lib;ext_build\openexr\zlib\MinSizeRel\zlib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/MinSizeRel/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/MinSizeRel/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/eigen" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Imath" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Iex" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/IlmBase/Half" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/openexr/OpenEXR/IlmImf" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/OpenEXR/config" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/ext_build/openexr/IlmBase/config" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/tbb/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/pcg32" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/pugixml/src" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/hypothesis" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/glfw/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/glew/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/nanovg/src" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/include" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/filesystem" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/nanogui/ext/nanovg/example" /external:I "D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/ext/spherical-harmonics" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;__TBB_NO_IMPLICIT_LINKAGE;NDEBUG;__TBB_NO_IMPLICIT_LINKAGE=1;NANOGUI_USE_OPENGL;NANOGUI_GLAD;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tinyformat;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glad\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\eigen;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Imath;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Iex;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\IlmBase\Half;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\config;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\tbb\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pcg32;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\pugixml\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\hypothesis;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glfw\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\glew\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\src;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\include;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\filesystem;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\nanogui\ext\nanovg\example;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ext_build\tbb\RelWithDebInfo\tbb_static.lib;ext_build\RelWithDebInfo\pugixml.lib;ext_build\openexr\OpenEXR\IlmImf\RelWithDebInfo\IlmImf.lib;ext_build\nanogui\RelWithDebInfo\nanogui.lib;ext_build\zlib\RelWithDebInfo\zlibstatic.lib;ext_build\openexr\IlmBase\Half\RelWithDebInfo\Half.lib;ext_build\openexr\IlmBase\Imath\RelWithDebInfo\Imath.lib;ext_build\openexr\IlmBase\IlmThread\RelWithDebInfo\IlmThread.lib;ext_build\openexr\IlmBase\Iex\RelWithDebInfo\Iex.lib;ext_build\openexr\zlib\RelWithDebInfo\zlib.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/RelWithDebInfo/nori.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/RelWithDebInfo/nori.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt -BD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build --check-stamp-file D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt -BD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build --check-stamp-file D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt -BD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build --check-stamp-file D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt -BD:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build --check-stamp-file D:/FileRecv/Learning/GitHub/GAMES/GAMES202/HW2/prt/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\bbox.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\bitmap.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\block.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\bsdf.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\accel.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\camera.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\color.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\common.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\dpdf.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\frame.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\integrator.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\emitter.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\mesh.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\object.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\parser.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\proplist.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\ray.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\rfilter.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\sampler.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\scene.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\timer.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\transform.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\vector.h" />
+    <ClInclude Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\include\nori\warp.h" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\bitmap.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\block.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\accel.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\chi2test.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\common.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\diffuse.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\gui.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\independent.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\main.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\mesh.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\obj.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\object.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\parser.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\perspective.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\proplist.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\rfilter.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\scene.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\ttest.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\warp.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\microfacet.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\mirror.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\dielectric.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\src\prt.cpp" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics\sh\spherical_harmonics.cc" />
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\spherical-harmonics\sh\default_image.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ZERO_CHECK.vcxproj">
+      <Project>{D21E20FB-CC5D-357D-B4B5-D76CE3CA347C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\Half\Half.vcxproj">
+      <Project>{BA4DF874-96FD-36C3-992F-62D18307FB3C}</Project>
+      <Name>Half</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\Iex\Iex.vcxproj">
+      <Project>{D05563B5-EF70-3D05-BA8F-25B248DE30A3}</Project>
+      <Name>Iex</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\OpenEXR\IlmImf\IlmImf.vcxproj">
+      <Project>{4387BAF3-4F77-30E5-A590-BD468533D0EE}</Project>
+      <Name>IlmImf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\IlmThread\IlmThread.vcxproj">
+      <Project>{5708BEBF-AB63-3848-86D3-758B4E0EA6D1}</Project>
+      <Name>IlmThread</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\IlmBase\Imath\Imath.vcxproj">
+      <Project>{5B77F4AC-253C-36AF-801D-C06A775BD0DC}</Project>
+      <Name>Imath</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\nanogui\nanogui.vcxproj">
+      <Project>{A66E1733-693F-3E12-9CF0-BB31020A8177}</Project>
+      <Name>nanogui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\pugixml.vcxproj">
+      <Project>{BD1DAEC4-D633-3657-A41E-A3F077FF1FE1}</Project>
+      <Name>pugixml</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\tbb\tbb_static.vcxproj">
+      <Project>{FA3643B9-6770-3481-9788-54A955C0F5B5}</Project>
+      <Name>tbb_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\openexr\zlib\zlib.vcxproj">
+      <Project>{E4C923F0-4165-377E-AA80-A6D3AA16C4B7}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\build\ext_build\zlib\zlibstatic.vcxproj">
+      <Project>{5FAF7633-1B3B-3FD6-918C-FB7302D96D11}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

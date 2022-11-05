@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf\b44ExpLogTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\FileRecv\Learning\GitHub\GAMES\GAMES202\HW2\prt\ext\openexr\OpenEXR\IlmImf\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{777CE49F-F092-3CAA-A55D-DF7C4ABB2675}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
